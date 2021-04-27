@@ -5,4 +5,5 @@ module.exports = knex({
     connection: process.env.DATABASE_URL,
     pool: { min: 1, max: 2 },
     acquireConnectionTimeout: 5000,
+    //ssl: { rejectUnauthorized: false }
   });
